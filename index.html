@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="header-container">
+        <h2 class="header-el header">Generate a</h2>
+        <h1 class="header-el1 header">random password</h1>
+        <p class="header-el header headerFontSize">Never use an insecure password again.</p>
+    </div>
+    <button id="button-el" class="buttonGenerator">Generate Passwords</button>
+
+    <form action="radio-button">
+        <label>
+            <input type="radio" name="only" id="numbers-radio" value="number" onclick="numbers()">
+            Numbers Only
+        </label>
+        <label>
+            <input type="radio" name="only" id="letters-radio" value="letter" onclick="letters()">
+            Letters Only
+        </label>
+        <label>
+            <input type="radio" name="only" id="symbols-radio" value="symbol" onclick="symbols()">
+            Symbols Only
+        </label>
+        <label>
+            <input type="radio" name="only" id="security-radio" value="maximum" onclick="maximum()">
+            Maximum Security
+        </label>
+        <p id="output"></p>
+    </form>
+
+    <hr id="hrLine">
+
+    <section id="password-section">
+        <p type="text" id="password1" class="password"></p>
+        <p type="text" id="password2" class="password"></p>
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
